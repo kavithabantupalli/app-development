@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BC92ED"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="9dp"
+            android:src="@drawable/girl" />
+
+
+        <TextView
+            android:layout_toRightOf="@+id/profile"
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="kavitha bantupalli"
+            android:textColor="#0055FE"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/profile"
+            android:layout_below="@+id/nameText"
+            android:id="@+id/mailText"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="19sp"
+            android:text="kavithabantupalli@gmail.com"
+            android:textColor="#8A1905"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/profile"
+            android:layout_below="@+id/mailText"
+            android:id="@+id/phonenoText"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="phone no:1234567891"
+            android:textSize="22sp"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:backgroundTint="#007ACC"
+            android:text="Education"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:text="Address"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:background="@drawable/gmail">
+        </ImageButton>
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/insta">
+        </ImageButton>
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/snap">
+        </ImageButton>
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/whatsapp">
+        </ImageButton>
+    </LinearLayout>
+
+
+</LinearLayout>
